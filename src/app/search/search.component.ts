@@ -8,6 +8,17 @@ import { Book } from '../../Book';
   styleUrls: ['./search.component.css']
 })
 
+/**
+ * @ngdoc Component
+ * @name SearchComponent
+ * @property searchKey: the value of the input text
+ * @property searchResults: an array of objects Book returned by the http request
+ * @property searchedItem: the object Book selected
+ * @requires SearchService and the Book object class
+ * @method googleSearch(): assign the fetched data to the searchResults of Book type
+ * @method bookSelected(book): onBlur( on input text ), assign to searchedItem the input text value
+ **/
+
 export class SearchComponent {
 
   searchKey: string;

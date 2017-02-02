@@ -3,4 +3,26 @@
   <span>
     <md-icon>search</md-icon>
   </span>
+  <datalist id="booksList">
+    <option  *ngFor="let book of searchResults" value="{{book.volumeInfo.title}}">
+  </datalist>
+</section>
+<section id="bookSelected">
+  <div *ngIf="searchedItem">
+    <h2>Book's info</h2>
+    <h3>{{searchedItem.volumeInfo.title}}</h3>
+    <h5>{{searchedItem.volumeInfo.subtitle}}</h5>
+      <div class="book">
+        <div class="book__info image">
+          <img src="{{searchedItem.volumeInfo.imageLinks.thumbnail}}" alt="{{searchedItem.volumeInfo.title}}">
+        </div>
+        <div class="book__info detail">
+          <p>ID: {{searchedItem.id}}</p>
+          <p>Publishing Date: {{searchedItem.volumeInfo.publishedDate | date: 'dd/MM/yyyy'}}</p>
+          <p>Publisher: {{searchedItem.volumeInfo.publisher}}</p>
+          <p>Description: {{searchedItem.volumeInfo.description}}</p>
+          <p>Preview: <a href="{{searchedItem.volumeInfo.previewLink}}" target="_blank">{{searchedItem.volumeInfo.previewLink}}</a></p>
+        </div>
+      </div>
+  </div>
 </section>

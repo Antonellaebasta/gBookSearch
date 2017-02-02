@@ -6,6 +6,7 @@ import { MaterialModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
+import { SearchService } from './services/search.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { SearchComponent } from './search/search.component';
     HttpModule,
     MaterialModule.forRoot()
   ],
-  providers: [],
+  providers: [SearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -62,3 +62,34 @@ section {
 #search span md-icon {
   margin: auto;
 }
+
+#bookSelected {
+  width: 66%;
+  font-family: 'Lato';
+  font-size: 3vh;
+  font-weight: lighter;
+}
+
+#bookSelected .book {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+}
+
+#bookSelected .book__info {
+  margin: 2%;
+}
+
+#bookSelected .book__info.image {
+  width: 20%;
+}
+
+a {
+  color: #009688;
+	cursor: pointer;
+}
+
+/* Remove Datalist Dropdown Arrow in Chrome */
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}

@@ -1,0 +1,6 @@
+<section id="search">
+  <input type="text" name="search_text" id="search_text" placeholder="Search a book..." list="booksList" [(ngModel)] = 'searchKey' name='searchKey' (keyup)="googleSearch()" (blur)="bookSelected(searchKey)"/>
+  <span>
+    <md-icon>search</md-icon>
+  </span>
+</section>

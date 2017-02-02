@@ -1,0 +1,25 @@
+h1{
+  font-family: 'Lato';
+  font-size: 5vh;
+  font-weight: lighter;
+  color: #37474F;
+  text-align: center;
+}
+
+h1:after{
+  content: " ";
+  display: inline-block;
+  margin: 0 0 8px 20px;
+  height: 2px;
+  width: 20%;
+  background-color: #CFD8DC;
+}
+
+h1:before{
+  content: " ";
+  display: inline-block;
+  margin: 0 20px 8px 0;
+  height: 2px;
+  width: 20%;
+  background-color: #CFD8DC;
+}
